@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Conexion al servidor donde estan los estilos CSS de Bootstrap  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+    <!-- link a mi CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Nombre de la pestaña -->
+    <title>Gramlab</title>
+</head>
+<body class="body-blanco">
+    <!-- Header -->
+    <header class="position-sticky top-0 bg-blanco" style="z-index:3;">
+        <div class="container" >
+            <div class="row">
+                <div class="col d-flex flex-row justify-content-between informacion" style="font-size: 0.8vw;" >
+                    <p>Coronel Borges 848 - Junín, Buenos Aires</p>
+                    <p>Telefono</p>
+                    <p>Email</p>
+                    <p>Facebook</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="container  pb-2 ">
+            <div class="row">
+                <div class="col-4">
+                    <img class="img-fluid" src="multimedia/logo2.jpeg" alt="logo">
+                </div>
+
+                <div class="col-8 ">
+                    <nav class="navbar navbar-expand-lg">
+                        <div class="container-fluid d-flex justify-content-end ">
+                          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                          </button>
+                          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                            <div class="navbar-nav  d-flex justify-content-evenly " style="width:100%;">
+                                <a class="nav-link active" aria-current="page" href="index.html">INICIO</a>
+                                <a class="nav-link" href="#nosotros">NOSOTROS</a>
+                                <a class="nav-link" href="pages/servicios.html">SERVICIOS</a>
+                                <a class="nav-link" href="pages/preguntas.html">PREGUNTAS FRECUENTES</a>
+                                <a class="nav-link" href="#contacto">CONTACTO</a>
+                            </div>
+                          </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+       
+    </header>
+    <!-- Fin header -->
+
+    <main>
+        <!-- Seccion para la imagen del inicio -->
+    
+        <section class="imagen-inicio">
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner"  >
+                  <div class="carousel-item active " >
+                    <img class="img-fluid" src="multimedia/imagen-galeria2.jpg" class="d-block w-100" alt="tubos-ensayo">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5 class="fs-1 h5-negro fst-italic subtitulo-imagen mov-left" >Laboratorio de análisis clínicos</h5>
+                      
+                    </div>
+                  </div>
+                  <div class="carousel-item" >
+                    <img class="img-fluid" src="multimedia/imagen-inicio2.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5 class="fs-1 h5-verde fst-italic subtitulo-imagen" style="color:#31AFB4;">Extracciones a domicilio</h5>
+                      
+                    </div>
+                  </div>
+                  <div class="carousel-item" >
+                    <img class="img-fluid" src="multimedia/imagen-galeria3.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5 class="fs-1 h5-negro fst-italic subtitulo-imagen">Trato personalizado</h5>
+                      
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+        </section>
+
+        <!-- Fin de la seccion inicio -->
+
+        
+        <!-- Seccion nosotros -->
+        
+        <section id="nosotros" class="bg-verde">
+        <!-- Texto SOBRE NOSOTROS -->
+            <div class="info-nosotros">
+                <div class="encabezado-nos">
+                    <h2>SOBRE NOSOTROS</h2>
+                </div>
+                <div class="texto-nos">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem esse voluptates aliquam dolor odio praesentium sed consequuntur. Omnis, maxime ratione distinctio amet pariatur, qui iste sit, exercitationem dolorem vel dolore.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis a fugit, ipsum, illo blanditiis inventore sunt doloribus molestiae nobis voluptate dolorem consequuntur dolores reprehenderit amet corrupti itaque possimus reiciendis sit?</p>
+                </div>
+            </div>
+
+            <!-- Lista con los profesionales -->
+            <div class="profesionales">
+                <div class="encabezado-prof">
+                    <h2>PROFESIONALES</h2>
+                </div>
+                <div class="texto-prof">
+                    <ul>
+                        <li>Balbi Vaccarezza María Gracia</li>
+                        <li>Analía Schumacher</li>
+                        <li>Elisa Mauricio</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Fin seccion nosotros -->
+
+    
+        <!-- Seccion contacto -->
+
+        <section id="contacto">
+            <div class="contacto-info">
+                <h2>CONTACTO</h2>
+                <!-- este texto se podria convertir en un formulario, cuando lo sepa hacer :) -->
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem esse voluptates aliquam dolor odio praesentium sed consequuntur. Omnis, maxime ratione distinctio amet pariatur, qui iste sit, exercitationem dolorem vel dolore.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis a fugit, ipsum, illo blanditiis inventore sunt doloribus molestiae nobis voluptate dolorem consequuntur dolores reprehenderit amet corrupti itaque possimus reiciendis sit?
+                </p>
+            </div>
+            <div class="contacto-mapa">
+                <!-- MAPA -->
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3285.053844475378!2d-60.9470726!3d-34.5775041!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b8eb366673fced%3A0x31256694ec47993f!2sCnel.%20Borges%20848%2C%20Jun%C3%ADn%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1653659271925!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+
+        <!-- Fin seccion contacto -->
+    </main>
+    <!-- Footer -->
+    
+    <footer>
+        <!-- texto con informacion util para el usuario -->
+        <div class="footer-info bg-verde">
+            <p>Coronel Borges 848 - Junín, Buenos Aires</p>
+            <p>Telefono</p>
+            <p>Email</p>
+            <p>Facebook</p>
+        </div>
+        
+
+    </footer>
+
+    <!-- Fin footer -->
+
+    <!-- Conexion al servidor con las funciones de JS de Bootstrap → VA SIEMPRE DEBAJO DE TODO  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+</body>
+</html>
