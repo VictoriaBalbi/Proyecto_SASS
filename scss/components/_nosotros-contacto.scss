@@ -1,0 +1,94 @@
+/*NOSOTROS Y CONTACTO*/
+/* seccion nosotros (ES UN ID) → quiero dos columnas */
+/* la seccion contacto la quiero igual asi que reutilizo el codigo */
+#nosotros, #contacto {
+    
+    height: 25%;
+    display: flex;
+    width: 100vw;
+
+    /*padding porque al tener un div con width del 50% no puedo centrarlo bien sin el padding*/
+    padding: 1% 5%;
+    /*separo los divs equidistantemente en el eje X*/
+    justify-content: space-evenly;
+
+    flex-wrap: wrap;
+
+    text-align: justify;
+    line-height: 1.6;
+
+            
+}
+
+/*como quiero el fondo de distinto color en contacto debo diferenciar los colores de letra segun la clase*/
+#nosotros {
+    color: white;
+    /*para evitar que el header me tape la seccion al clickear el enlace pongo un scroll-margin-top*/
+    scroll-margin-top: 15vh;
+  
+}
+
+#contacto {
+    background-color: white;
+    color:$main_color_verde;
+    padding-bottom: 5%;
+}
+
+#nosotros h2 {
+    font-family: $main_font;
+    text-transform: uppercase;
+    color: white;
+    padding: 5%;
+    font-size: 1.8vw;
+       
+}
+
+
+#contacto h2 {
+    font-family: $main_font;
+    text-transform: uppercase;
+    color:$main_color_verde;
+    padding: 3%;
+    font-size: 1.8vw;
+}
+
+ #nosotros div, #contacto div{
+    /*ancho del 50% del contenedor para que tengan el mismo ancho cada div*/
+    width: 50%;
+    /*flexbox para centrar el contenido*/
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+
+    font-size: 1vw;
+ 
+}  
+
+@media only screen and (max-width:468px){
+    #contacto div {
+        width: 100%;
+        margin-bottom: 5%;
+    }
+
+}
+
+@media only screen and (max-width:994px){
+   /* cuando se colapsa el menu no quiero que me tape la seccion al bajar → aumento el scroll margin top */
+    #nosotros{
+        scroll-margin-top: 45vh;
+    }
+}
+
+
+
+.contacto-mapa iframe{
+   padding: 0% 10%;
+   /* width: 100%;
+   height: 100%; */
+     
+}
+
+.texto-prof ul{
+    list-style:square;
+    color: white;
+}

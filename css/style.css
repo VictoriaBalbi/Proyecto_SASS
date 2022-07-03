@@ -4,10 +4,8 @@ COLORES
 verde agua: #31AFB4
 blanco: #FFFFFF
 */
-/* fuente monserrat (font-family: 'Montserrat', sans-serif;) */
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap");
-/*Colores de la pagina*/
 /* Reseteo */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap");
 * {
   padding: 0%;
   margin: 0%;
@@ -17,52 +15,41 @@ blanco: #FFFFFF
   max-width: 100%;
 }
 
-.bg-blanco {
-  background-color: white;
+/*Importo archivos base*/
+/* fuente monserrat (font-family: 'Montserrat', sans-serif;) */ /*Colores de la pagina*/
+/*Importo archivos de componentes de mi pag*/
+/*ESTILO DEL HEADER*/
+/*la clase informacion tiene los datos que quiero poner en la primer linea de la pag*/
+.informacion {
+  /* animacion para la info */
+  /* aparece más grande desde arriba*/
+  animation: info 2s;
 }
 
-.bg-verde {
-  background-color: #31AFB4;
+/* Agrandar el item del menu donde pongo el cursor */
+.navbar-nav a:hover {
+  transform: scale(1.2);
+  border-bottom: #31AFB4 2px solid;
 }
 
-html {
-  /* para referenciar el position del footer */
-  min-height: 100%;
-  position: relative;
+@keyframes info {
+  0% {
+    opacity: 0;
+    /* negativos mueven hacia arriba */
+    transform: scale(1.5) translateY(-0.75em);
+  }
+  20% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    transform: translateZ(-1000em);
+  }
 }
-
-.body-verde {
-  background-color: #31AFB4;
-  /*me queda la barra para scrollear horizontalmente y nose como sacarla ¿?*/
-  /*defino el ancho del contenedor mas grande como el 100 de la pantalla*/
-  max-width: 100%;
-}
-
-.body-blanco {
-  background-color: white;
-  /*me queda la barra para scrollear horizontalmente y nose como sacarla ¿?*/
-  /*defino el ancho del contenedor mas grande como el 100 de la pantalla*/
-  max-width: 100%;
-}
-
-/*letra y estilo de las listas*/
-ul {
-  list-style: none;
-  font-family: "Montserrat", sans-serif;
-}
-
-/* estilo a las fuentes de los enlaces */
-a {
-  font-family: "Montserrat", sans-serif;
-  text-transform: uppercase;
-}
-
-/* estilo a las fuentes de los parrafos */
-p {
-  font-family: "Montserrat", sans-serif;
-  font-weight: lighter;
-}
-
+/*FIN ESTILO DEL HEADER*/
 /*IMAGEN DE INICIO*/
 /*css para la imagen dentro de la seccion*/
 .imagen-inicio h1 {
@@ -199,56 +186,6 @@ p {
   color: white;
 }
 
-/* FOOTER -------------------------------------------------------------- */
-footer {
-  /* el ancho y alto es acorde a la pantalla → uso vh y vw */
-  height: fit-content;
-  width: 100vw;
-  /* fuente */
-  color: #FFFFFF;
-  /* borde superior */
-  border-top: double 5px white;
-  position: absolute;
-  bottom: 0;
-}
-
-.footer-info {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  font-size: 1vw;
-}
-
-/* FIN FOOTER ---------------------------------------------------------- */
-/* SERVICIOS */
-.contenido-servicios h1 {
-  padding: 3%;
-  font-family: "Montserrat", sans-serif;
-  text-transform: uppercase;
-  color: white;
-  font-size: 3vw;
-  text-align: center;
-}
-
-@media only screen and (max-width: 468px) {
-  .galeria-serv {
-    /* para centrar */
-    margin: 2%;
-  }
-  .galeria-serv div {
-    margin: 2%;
-  }
-}
-@media only screen and (min-width: 469px) and (max-width: 960px) {
-  .galeria-serv {
-    /* para centrar */
-    margin: 2%;
-  }
-  .galeria-serv div {
-    margin-bottom: 3%;
-  }
-}
-/* FIN SERVICIOS -------------------------------------------------- */
 /* PREGUNTAS FREC ------------------------------------------------- */
 .vtabs {
   /* posiciono mi clase vtabs para que quede verticalmente del lado izq */
@@ -317,5 +254,100 @@ footer {
 }
 
 /* FIN PREGUNTAS FREC --------------------------------------------- */
+/* SERVICIOS */
+.contenido-servicios h1 {
+  padding: 3%;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  color: white;
+  font-size: 3vw;
+  text-align: center;
+}
+
+@media only screen and (max-width: 468px) {
+  .galeria-serv {
+    /* para centrar */
+    margin: 2%;
+  }
+  .galeria-serv div {
+    margin: 2%;
+  }
+}
+@media only screen and (min-width: 469px) and (max-width: 960px) {
+  .galeria-serv {
+    /* para centrar */
+    margin: 2%;
+  }
+  .galeria-serv div {
+    margin-bottom: 3%;
+  }
+}
+/* FIN SERVICIOS -------------------------------------------------- */
+/* FOOTER -------------------------------------------------------------- */
+footer {
+  /* el ancho y alto es acorde a la pantalla → uso vh y vw */
+  height: fit-content;
+  width: 100vw;
+  /* fuente */
+  color: #FFFFFF;
+  /* borde superior */
+  border-top: double 5px white;
+  position: absolute;
+  bottom: 0;
+}
+
+.footer-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  font-size: 1vw;
+}
+
+/* FIN FOOTER ---------------------------------------------------------- */
+.bg-blanco {
+  background-color: white;
+}
+
+.bg-verde {
+  background-color: #31AFB4;
+}
+
+html {
+  /* para referenciar el position del footer */
+  min-height: 100%;
+  position: relative;
+}
+
+.body-verde {
+  background-color: #31AFB4;
+  /*me queda la barra para scrollear horizontalmente y nose como sacarla ¿?*/
+  /*defino el ancho del contenedor mas grande como el 100 de la pantalla*/
+  max-width: 100%;
+}
+
+.body-blanco {
+  background-color: white;
+  /*me queda la barra para scrollear horizontalmente y nose como sacarla ¿?*/
+  /*defino el ancho del contenedor mas grande como el 100 de la pantalla*/
+  max-width: 100%;
+}
+
+/*letra y estilo de las listas*/
+ul {
+  list-style: none;
+  font-family: "Montserrat", sans-serif;
+}
+
+/* estilo a las fuentes de los enlaces */
+a {
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+}
+
+/* estilo a las fuentes de los parrafos */
+p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: lighter;
+}
 
 /*# sourceMappingURL=style.css.map */
