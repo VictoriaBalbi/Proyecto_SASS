@@ -1,0 +1,37 @@
+/*ESTILO DEL HEADER*/
+
+/*la clase informacion tiene los datos que quiero poner en la primer linea de la pag*/
+.informacion {
+    /* animacion para la info */
+    /* aparece más grande desde arriba*/
+    animation: info 2s;
+
+}
+
+/* Agrandar el item del menu donde pongo el cursor */
+.navbar-nav a:hover {
+    transform: scale(1.2);
+    border-bottom: $main_color_verde 2px solid;
+}
+
+
+
+@keyframes info {
+    0% {
+        opacity: 0;
+        /* negativos mueven hacia arriba */
+        transform: scale(1.5) translateY(-0.75em);
+      }
+      20% {
+        opacity: 1;
+      }
+      90% {
+        opacity: 1;
+        transform: scale(1);
+      }
+      100% {
+        transform: translateZ(-1000em);
+      }
+}
+
+/*FIN ESTILO DEL HEADER*/

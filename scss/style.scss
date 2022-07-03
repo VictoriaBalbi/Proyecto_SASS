@@ -1,0 +1,92 @@
+/* 
+COLORES
+verde agua: #31AFB4
+blanco: #FFFFFF
+*/
+
+/*Importo archivos base*/
+@import 'base/fonts';
+@import 'base/variables'; 
+
+/*Importo archivos de componentes de mi pag*/
+@import 'components/footer';
+@import 'components/header';
+@import 'components/imgs-inicio';
+@import 'components/nosotros-contacto';
+@import 'components/preguntas';
+@import 'components/servicios';
+
+/* Reseteo */
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    /* para scrollear más lento entre secciones */
+    scroll-behavior: smooth;
+    max-width: 100%;
+    
+}
+
+.bg-blanco{
+    background-color: white;
+}
+
+.bg-verde{
+    background-color:$main_color_verde;
+}
+
+html {
+    /* para referenciar el position del footer */
+    min-height: 100%;
+    position: relative;
+}
+
+.body-verde{
+    background-color: $main_color_verde;
+    /*me queda la barra para scrollear horizontalmente y nose como sacarla ¿?*/
+    /*defino el ancho del contenedor mas grande como el 100 de la pantalla*/
+    max-width: 100%;
+ 
+   
+     
+}
+
+.body-blanco{
+    background-color: white;
+    /*me queda la barra para scrollear horizontalmente y nose como sacarla ¿?*/
+    /*defino el ancho del contenedor mas grande como el 100 de la pantalla*/
+    max-width: 100%;
+ 
+
+}
+
+/*letra y estilo de las listas*/
+ul{
+    list-style: none;
+    font-family: $main_font;
+    
+}
+
+/* estilo a las fuentes de los enlaces */
+a{
+    font-family: $main_font;
+   
+    text-transform: uppercase;
+   
+    
+}
+
+/* estilo a las fuentes de los parrafos */
+p {
+    font-family: $main_font;
+    font-weight: lighter;
+    
+}
+
+
+
+
+
+
+
+

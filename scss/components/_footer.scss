@@ -1,0 +1,32 @@
+/* FOOTER -------------------------------------------------------------- */
+
+footer{
+    /* el ancho y alto es acorde a la pantalla → uso vh y vw */
+    height: fit-content;
+    width: 100vw;
+      
+
+    /* fuente */
+    color:#FFFFFF;
+
+    
+    /* borde superior */
+    border-top:double 5px  white ;
+   
+    position: absolute;
+    bottom: 0;
+}
+
+.footer-info {
+    
+    display: flex;
+    flex-direction: row;
+    
+    justify-content: space-evenly;
+    font-size: 1vw;
+      
+}
+
+
+
+/* FIN FOOTER ---------------------------------------------------------- */
