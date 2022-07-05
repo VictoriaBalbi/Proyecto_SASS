@@ -8,36 +8,43 @@
     margin: 50px auto;
 
     position: relative;
-}
 
-.vtabs input{
-    /* escondo el input para que no aparezca el check */
-    display: none;
-}
-
-.vtabs label {
-    /* label es en linea pero quiero que ocupe el 100% del ancho → display block*/
-    display: block;
-    width: 20%;
-    padding: 15px;
     
-    /* caracteristica de la fuente */
-    font-weight: 700;
-    font-size: 1.8vw;
+
+    & input {
+        /* escondo el input para que no aparezca el check */
+        display: none;
+    }
+
+    & label {
+         /* label es en linea pero quiero que ocupe el 100% del ancho → display block*/
+        display: block;
+        width: 20%;
+        padding: 15px;
+        
+        /* caracteristica de la fuente */
+        font-weight: 700;
+        font-size: 1.8vw;
+        
+        font-family:$main_font;
+        
+        color:$main_color_verde;
+
+        /* resalto el borde izquierdo */
+        border-left: 5px solid $main_color_verde;
+
+        &:hover{
+            /* al posicionar el mouse en una label quiero que cambie de color */
+            cursor: pointer;
+            color: purple;  
+        }
+
     
-    font-family:$main_font;
-       
-    color:$main_color_verde;
-
-    /* resalto el borde izquierdo */
-    border-left: 5px solid $main_color_verde;
+    }
 }
 
-.vtabs label:hover{
-    /* al posicionar el mouse en una label quiero que cambie de color */
-    cursor: pointer;
-    color: purple;  
-}
+
+
 
 /* quiero que el input seleccionado se quede cambiado de color */
 .vtabs input:checked + label{

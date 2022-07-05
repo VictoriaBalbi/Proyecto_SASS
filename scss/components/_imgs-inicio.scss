@@ -1,66 +1,49 @@
 
 /*IMAGEN DE INICIO*/
 /*css para la imagen dentro de la seccion*/
-.imagen-inicio h1{
-    color: white;
-    font-size: 4vw;
-}
-
- 
- @keyframes opacidad-imagen {
-    0% {
-        opacity: 0.6;
+.imagen-inicio{
+  background-color: white;
+  // Subtitulo - fuente
+    & subtitulo-imagen {
+      font-family: $main_font;
+      font-size: 4vw;
+    }
+    // Subtitulo - animacion
+    & mov-left {
+      /* animacion para que el 1er titulo aparezca desde la izquierda */
+      animation: fromLeft 3s;
+      
+        @keyframes fromLeft {
+          0% {
+              opacity: 0;
+              /* negativos mueven hacia arriba */
+              transform: scale(1.5) translateX(-100%);
+            }
+            20% {
+              opacity: 1;
+            }
+            90% {
+              opacity: 1;
+              transform: scale(1);
+            }
+            100% {
+              transform: translateZ(-1000em);
+            }
       }
-    25% {
-        opacity: 0.7;
-    }
-    50% {
-        opacity: 0.8;
-    }
-    75% {
-        opacity: 0.9;
-    }
-    100% {
-        opacity: 1;
-      }
- }
-.subtitulo-imagen{
-    font-family: $main_font;
     
-    font-size: 4vw;
-       
- }
+    }  
 
- .mov-left {
-    /* animacion para que el 1er titulo aparezca desde la izquierda */
-    animation: fromLeft 3s;
- }
-
- @keyframes fromLeft {
-    0% {
-        opacity: 0;
-        /* negativos mueven hacia arriba */
-        transform: scale(1.5) translateX(-100%);
-      }
-      20% {
-        opacity: 1;
-      }
-      90% {
-        opacity: 1;
-        transform: scale(1);
-      }
-      100% {
-        transform: translateZ(-1000em);
-      }
+  /* Ocultar imagen en mobile */
+  @media only screen and (max-width:468px){
+    display: none;
+  }
 }
+    
 
-/* Ocultar imagen en mobile */
-@media only screen and (max-width:468px){
-    .imagen-inicio{
-        display: none;
-    }
 
-}
+
+
+
 
 
 /*FIN IMAGEN DE INICIO*/

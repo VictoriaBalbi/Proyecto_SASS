@@ -4,6 +4,19 @@ verde agua: #31AFB4
 blanco: #FFFFFF
 */
 
+/*Importo archivos base*/
+@import 'base/fonts';
+@import 'base/variables'; 
+
+/*Importo archivos de componentes de mi pag*/
+@import 'components/header';
+@import 'components/imgs-inicio';
+@import 'components/nosotros-contacto';
+@import 'components/preguntas';
+@import 'components/servicios';
+@import 'components/footer';
+
+
 /* Reseteo */
 * {
     padding: 0%;
@@ -14,19 +27,6 @@ blanco: #FFFFFF
     max-width: 100%;
     
 }
-
-/*Importo archivos base*/
-@import './base/fonts';
-@import './base/variables'; 
-
-/*Importo archivos de componentes de mi pag*/
-@import './components/header';
-@import './components/imgs-inicio';
-@import './components/nosotros-contacto';
-@import './components/preguntas';
-@import './components/servicios';
-@import './components/footer';
-
 
 .bg-blanco{
     background-color: white;
