@@ -127,13 +127,13 @@ blanco: #FFFFFF
 
 #contacto {
   height: 25%;
+  display: flex;
   width: 100vw;
   /*padding porque al tener un div con width del 50% no puedo centrarlo bien sin el padding*/
   padding: 1% 5%;
   /*separo los divs equidistantemente en el eje X*/
-  display: flex;
   justify-content: space-evenly;
-  flex-direction: wrap;
+  flex-wrap: wrap;
   text-align: justify;
   line-height: 1.6;
   background-color: white;

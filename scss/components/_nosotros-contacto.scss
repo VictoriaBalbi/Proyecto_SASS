@@ -4,15 +4,14 @@
 #nosotros {
     
     height: 25%;
-
+  
     width: 100vw;
 
     /*padding porque al tener un div con width del 50% no puedo centrarlo bien sin el padding*/
     padding: 1% 5%;
     /*separo los divs equidistantemente en el eje X*/
-  
-    @include disp_flex(flex,space-evenly,wrap);
-
+   
+    @include disp_flex(flex, space-evenly, wrap);
     text-align: justify;
     line-height: 1.6;
 
@@ -55,15 +54,15 @@
 #contacto {
     
     height: 25%;
-    
+    display: flex;
     width: 100vw;
 
     /*padding porque al tener un div con width del 50% no puedo centrarlo bien sin el padding*/
     padding: 1% 5%;
     /*separo los divs equidistantemente en el eje X*/
-    
+    justify-content: space-evenly;
 
-    @include disp_flex(flex,space-evenly,wrap);
+    flex-wrap: wrap;
 
     text-align: justify;
     line-height: 1.6;
@@ -82,18 +81,18 @@
 
     & div {
          /*ancho del 50% del contenedor para que tengan el mismo ancho cada div*/
-    width: 50%;
-    /*flexbox para centrar el contenido*/
-    display: flex;
-    flex-flow: column wrap;
-    align-items: center;
+        width: 50%;
+        /*flexbox para centrar el contenido*/
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
 
-    font-size: 1vw;
+        font-size: 1vw;
 
-    @media only screen and (max-width:468px){
-        width: 100%;
-        margin-bottom: 5%;
-    }
+        @media only screen and (max-width:468px){
+            width: 100%;
+            margin-bottom: 5%;
+        }
     }
 
     .contacto-mapa iframe{
