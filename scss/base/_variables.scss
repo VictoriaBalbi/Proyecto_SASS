@@ -1,2 +1,13 @@
 /*Colores de la pagina*/
 $main_color_verde: #31AFB4; 
+$color_base: white;
+$color_secundario: purple;
+
+/*Mixin para flex*/
+
+@mixin  disp_flex($display, $justify, $wrap) {
+    display: $display;
+    justify-content: $justify;
+    flex-direction: $wrap;
+}
+

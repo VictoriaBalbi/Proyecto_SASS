@@ -7,11 +7,11 @@ footer{
       
 
     /* fuente */
-    color:#FFFFFF;
+    color:$color_base;
 
     
     /* borde superior */
-    border-top:double 5px  white ;
+    border-top:double 5px  $color_base ;
    
     position: absolute;
     bottom: 0;

@@ -8,6 +8,7 @@ blanco: #FFFFFF
 /* fuente monserrat (font-family: 'Montserrat', sans-serif;) */
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap");
 /*Colores de la pagina*/
+/*Mixin para flex*/
 /*Importo archivos de componentes de mi pag*/
 /*ESTILO DEL HEADER*/
 /*la clase informacion tiene los datos que quiero poner en la primer linea de la pag*/
@@ -84,13 +85,13 @@ blanco: #FFFFFF
 /* la seccion contacto la quiero igual asi que reutilizo el codigo */
 #nosotros {
   height: 25%;
-  display: flex;
   width: 100vw;
   /*padding porque al tener un div con width del 50% no puedo centrarlo bien sin el padding*/
   padding: 1% 5%;
   /*separo los divs equidistantemente en el eje X*/
+  display: flex;
   justify-content: space-evenly;
-  flex-wrap: wrap;
+  flex-direction: wrap;
   text-align: justify;
   line-height: 1.6;
   color: white;
@@ -126,13 +127,13 @@ blanco: #FFFFFF
 
 #contacto {
   height: 25%;
-  display: flex;
   width: 100vw;
   /*padding porque al tener un div con width del 50% no puedo centrarlo bien sin el padding*/
   padding: 1% 5%;
   /*separo los divs equidistantemente en el eje X*/
+  display: flex;
   justify-content: space-evenly;
-  flex-wrap: wrap;
+  flex-direction: wrap;
   text-align: justify;
   line-height: 1.6;
   background-color: white;
@@ -267,7 +268,7 @@ footer {
   height: fit-content;
   width: 100vw;
   /* fuente */
-  color: #FFFFFF;
+  color: white;
   /* borde superior */
   border-top: double 5px white;
   position: absolute;

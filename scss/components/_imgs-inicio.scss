@@ -2,12 +2,14 @@
 /*IMAGEN DE INICIO*/
 /*css para la imagen dentro de la seccion*/
 .imagen-inicio{
-  background-color: white;
+  background-color: $color_base;
   // Subtitulo - fuente
     & subtitulo-imagen {
       font-family: $main_font;
       font-size: 4vw;
+      
     }
+
     // Subtitulo - animacion
     & mov-left {
       /* animacion para que el 1er titulo aparezca desde la izquierda */

@@ -17,6 +17,8 @@ blanco: #FFFFFF
 @import 'components/footer';
 
 
+//Dejo los estilos más generales
+
 /* Reseteo */
 * {
     padding: 0%;
@@ -29,7 +31,7 @@ blanco: #FFFFFF
 }
 
 .bg-blanco{
-    background-color: white;
+    background-color: $color_base;
 }
 
 .bg-verde{
@@ -47,13 +49,11 @@ html {
     /*me queda la barra para scrollear horizontalmente y nose como sacarla ¿?*/
     /*defino el ancho del contenedor mas grande como el 100 de la pantalla*/
     max-width: 100%;
- 
-   
-     
+
 }
 
 .body-blanco{
-    background-color: white;
+    background-color: $color_base;
     /*me queda la barra para scrollear horizontalmente y nose como sacarla ¿?*/
     /*defino el ancho del contenedor mas grande como el 100 de la pantalla*/
     max-width: 100%;
@@ -83,8 +83,6 @@ p {
     font-weight: lighter;
     
 }
-
-
 
 
 
