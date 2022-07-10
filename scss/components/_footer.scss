@@ -17,10 +17,7 @@ footer{
     bottom: 0;
 
     .footer-info{
-        display: flex;
-        flex-direction: row;
-            
-        justify-content: space-evenly;
+        @include disp_flex(flex, space-evenly, wrap);
         font-size: 1vw;        
     }
 

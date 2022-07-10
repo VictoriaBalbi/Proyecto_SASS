@@ -11,3 +11,22 @@ $color_secundario: purple;
     flex-direction: $wrap;
 }
 
+/* Extends */
+/*Sintaxis: % + nombre { las propiedades } */
+
+// bolsita de propiedades para los h2
+%h2_standard{
+    font-family: $main_font;
+    text-transform: uppercase;
+    font-size: 1.8vw;
+}; 
+
+
+/*Mapa*/
+
+// propiedades de un parrafo
+$parrafo: (
+    alineacion: justify,
+    interlineado: 1.6,
+); 
+

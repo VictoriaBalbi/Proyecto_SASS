@@ -9,6 +9,15 @@ blanco: #FFFFFF
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap");
 /*Colores de la pagina*/
 /*Mixin para flex*/
+/* Extends */
+/*Sintaxis: % + nombre { las propiedades } */
+#contacto h2, #nosotros h2 {
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  font-size: 1.8vw;
+}
+
+/*Mapa*/
 /*Importo archivos de componentes de mi pag*/
 /*ESTILO DEL HEADER*/
 /*la clase informacion tiene los datos que quiero poner en la primer linea de la pag*/
@@ -99,11 +108,7 @@ blanco: #FFFFFF
   scroll-margin-top: 15vh;
 }
 #nosotros h2 {
-  font-family: "Montserrat", sans-serif;
-  text-transform: uppercase;
-  color: white;
   padding: 5%;
-  font-size: 1.8vw;
 }
 #nosotros div {
   /*ancho del 50% del contenedor para que tengan el mismo ancho cada div*/
@@ -141,11 +146,7 @@ blanco: #FFFFFF
   padding-bottom: 5%;
 }
 #contacto h2 {
-  font-family: "Montserrat", sans-serif;
-  text-transform: uppercase;
-  color: #31AFB4;
   padding: 3%;
-  font-size: 1.8vw;
 }
 #contacto div {
   /*ancho del 50% del contenedor para que tengan el mismo ancho cada div*/
@@ -276,8 +277,8 @@ footer {
 }
 footer .footer-info {
   display: flex;
-  flex-direction: row;
   justify-content: space-evenly;
+  flex-direction: wrap;
   font-size: 1vw;
 }
 
