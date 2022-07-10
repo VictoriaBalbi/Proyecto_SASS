@@ -1,7 +1,7 @@
 /*ESTILO DEL HEADER*/
-
-/*la clase informacion tiene los datos que quiero poner en la primer linea de la pag*/
-.informacion {
+header{
+  /*la clase informacion tiene los datos que quiero poner en la primer linea de la pag*/
+  .informacion {
     /* animacion para la info */
     /* aparece más grande desde arriba*/
     animation: info 2s;
@@ -23,10 +23,10 @@
             transform: translateZ(-1000em);
           }
     }
-}
+  }
 
-/* Agrandar el item del menu donde pongo el cursor */
-.navbar-nav  {
+  /* Agrandar el item del menu donde pongo el cursor */
+  .navbar-nav  {
   a{
     &:hover{
       transform: scale(1.2);
@@ -34,6 +34,9 @@
     }
   }
     
+  }
+
+  
 }
 
 
